@@ -1,0 +1,96 @@
+@import url("https://fonts.googleapis.com/css2?family=Outfit&display=swap");
+:root {
+  --htmlBG: hsl(30, 38%, 92%);
+  --buttonclr: hsl(158, 36%, 37%);
+  --articlesSectionBGclr: hsl(0, 0%, 100%);
+  --flexcontainerBorderradius: 7px;
+  --FontSizeforParagrph: 5px;
+}
+html {
+  box-sizing: border-box;
+  font-family: "Montserrat";
+  background: var(--htmlBG);
+  /* change the font family with the specifications you get */
+}
+body {
+  width: 100%;
+  min-height: 100vh;
+  font-family: "Montserrat";
+}
+@media only screen and (min-device-width: 375px) and (max-device-width: 400px) {
+  /* .wrapper {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: 1fr 2fr;
+
+    border: 2px solid black;
+  } */
+  .flexContainer {
+    display: flex;
+    flex-direction: column;
+    width: 79%;
+    min-height: 70vh;
+    border-radius: var(--flexcontainerBorderradius);
+    /* border: 2px solid black; */
+    background: var(--articlesSectionBGclr);
+    margin-top: 24px;
+    margin-left: 30px;
+  }
+
+  img {
+    width: 296px;
+    border-top-right-radius: 7px;
+    border-top-left-radius: 7px;
+  }
+  .articles {
+    background: var(--articlesSectionBGclr);
+  }
+  .articles {
+    padding: 20px;
+  }
+  .articles > .artc1 span {
+    letter-spacing: 5px;
+  }
+  .articles > .artc1 h2 {
+    font-weight: 500, 700;
+  }
+  .articles > .artc1 p {
+    line-height: 22px;
+    color: #9798a3;
+    font-size: 15px;
+  }
+  .articles > .artc2 .big {
+    font-size: 26px;
+    color: var(--buttonclr);
+    font-weight: 500, 700;
+  }
+  .articles > .artc2 .small {
+    font-size: 16px;
+    font-family: "Montserrat";
+    color: #83838e;
+  }
+  .articles > .artc2 sup {
+    text-decoration: line-through;
+  }
+  .articles > .artc2 button {
+    width: 245px;
+    height: 50px;
+    border-radius: var(--flexcontainerBorderradius);
+    background: var(--buttonclr);
+    color: var(--articlesSectionBGclr);
+  }
+  .articles .artc1 header span {
+    color: #808089;
+    /* font-weight: bolder; */
+  }
+  .articles > .artc2 button img {
+    width: 30px;
+    height: 16px;
+  }
+  .articles > .artc2 button {
+    font-size: 16px;
+  }
+}
+/* desktop */
+@media screen and (min-device-width: 1400px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 1) {
+}
